@@ -1,1 +1,64 @@
+1. which type of entity cannont exist in the database unless another type of entity also exist in the database but does not exist require that 
+the identifier of that other entity be included as part of its own identifier
+
+a. weak entity.
+b. strong entity.
+c. ID-dependent entity.
+d. ID-independent entity.
+
+answer: a
+
+
+
+2. The different classes of relations created by the technique for preventing modification anomalies are called:
+ 
+a. Normal forms.
+b. Referential integrity constraints.
+c. functional dependencies.
+d. None of above is correct.
+
+answer: a
+
+
+
+3. A keys:
+
+a. Must always be composed of two or more columns.
+b. can only be one column.
+c. identifies a row.
+d. identifies a column.
+
+answer:  c
+
+
+
+4. If a table has been normalized so that all determinants are candidate keys, then the table is in:
+
+a. 1NF.
+b. 2NF.
+c. 3NF.
+d. BCNF.
+
+answer: d
+
+
+
+5. When the values is one or more attributes being used as foreign key must exist in another set of one or more attributes ib another tables, we have created a(n):
+
+a. transitive dependency.
+b. insertion anomaly.
+c. referential integrity constraint.
+d. normal form.
+answer: c
+
+
+6. A functional dependency is a relationship between or among:
+
+a. tables.
+b. rows.
+c. relations.
+d. attributes.
+
+answer:d
+
 
