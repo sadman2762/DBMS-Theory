@@ -1,58 +1,3 @@
-###warm-up------(collected from seniors)
-Normalization ______ data duplication. 
-Answer ) Eliminates 
-In terms of databases, what does consistency mean? 
-Answer) The data stored several times in the same format 
-Why are duplicate tuples not allowed in a relation? 
-Answer) the relational data model applies set theory 
-When mapping a binary many-to-many ER relationship into the relation model which of the following is true ?
-Answer) Three relations are created 
-Thinking of data, information and knowledge – which of the following is an example of information?
-Answer ) the average men’s shoe size is nine 
-In order to perform a natural join the following need to be true : 
-Answer)
--It is based on equal-join 
--attributes with identical domains for the join
--attributes with identical names for the join 
-You can specify on individual relations the following constraints: 
-Answer) 
--entity integrity constraint 
--key constraint 
-why are tuples in a relation not ordered? 
-Answer) the relational data model applies set theory 
-What is the difference between an entity and attribute? 
-Answer) An attribute is a field in a database and an entity is a table 
-Which of the following is true? 
-Answer) A DMBS separates applications from data 
-
-The universe constraint specifies – for an attribute set which may have redundant attributes – that no two distinct tuples in any state r of R can have the same value for the attribute set called _______.
-Answer) Super key 
-The relational model’s domain constraint is a _______ . 
-Answer) Schema-based constraint 
-Which of the following symbols is not used in an ERD ?
-Answer) circle 
-A prime attribute means: 
-Answer) it is a member of some candidate  key of R 
-If a relation is in BCNF, then it is also in 
-Answer) All of the above ( 1NF, 2NF,3NF) 
-Extra notes: 
-Another name for weak entity is child
-In terms of database what does consistency mean?
-- All users have the same view of data
-Why are duplicate tuples not allowed in a relation?
-- The relational data model not allows redundancy
-What is the difference between entity and an attribute?
-- An attribute is a field in a database and an entity is a table
-The uniqueness constraint specifies – for an attribute set which may have redundant attrbute – that no 
-two distinct tuples in any state r of R can have the same value for the attribute set called _____
-- Super key
-Which of the following symbol is not used in ERD?
-- Circle
-A prime attribute means 
-- It is a member of some candidate key of R
-If a relation is in BCNF, then it is also in
-- All of the above
-
 EXAM_MCQ----my answers
 
 1. which type of entity cannont exist in the database unless another type of entity also exist in the database but does not exist require that 
@@ -161,7 +106,7 @@ d.none of these
 answer:a
 
 12.Database ------- is the logical design of the data and the database ----------
-which is snapshot of data at a given instance of time.(2018)
+which is snapshot of data at a given instance of time.(2018,2023)
 a.instance, schema
 b.relation, schema
 c.relation, domain
@@ -169,7 +114,7 @@ d.schema, instance
 
 answer:d
 
-13.The tuples of the relations can be of _________ order.(2018)
+13.The tuples of the relations can be of _________ order.(2018,2023)
 a.any
 b.same
 c.sorted
@@ -177,7 +122,7 @@ d.constant
 
 answer:a
 14.Which one of the following is a set of one or more attributes taken collectively to uniquely 
-identify a record:(2018)
+identify a record:(2018,2023)
 a.candidate key
 b.sub key
 c.super key
@@ -185,7 +130,7 @@ d.foreign key
 
 answer:c
 
-15.Tables in Second Normal Form:(2NF)  (2018)
+15.Tables in Second Normal Form:(2NF)  (2018,2023)
 a.eliminates all hidden dependencies
 b.eliminates all possibilities of insertion anamolies
 c.have a composite key
@@ -193,7 +138,31 @@ d.have all non-key fields depend on the whole primary key
 
 answer:a
 
-16.
+16.For each attribute of a relation, there is a set permitted values, called the______ of that attribute. (2023)
+a.Domain
+b.Relation
+c.Set
+d.Schema
+
+answer:a
+
+17. An attribute in an relation is a foreign key if the ______ key from one relation is used as an attribute in that relation.(2023)
+a.Candidate
+b.Super
+c.Primary
+d.Sub
+
+answer:c
+
+18.7.Which forms simplifies and ensures that there is minimal data aggregates and repetitive groups:(2023)
+a.1NF
+b.2NF
+c.3NF
+d.All of the mentioned 
+
+answer:c
+
+
 
 
 
