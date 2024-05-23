@@ -1,1 +1,59 @@
+###warm-up
+Normalization ______ data duplication. 
+Answer ) Eliminates 
+In terms of databases, what does consistency mean? 
+Answer) The data stored several times in the same format 
+Why are duplicate tuples not allowed in a relation? 
+Answer) the relational data model applies set theory 
+When mapping a binary many-to-many ER relationship into the relation model which of the following is true ?
+Answer) Three relations are created 
+Thinking of data, information and knowledge – which of the following is an example of information?
+Answer ) the average men’s shoe size is nine 
+In order to perform a natural join the following need to be true : 
+Answer)
+-It is based on equal-join 
+-attributes with identical domains for the join
+-attributes with identical names for the join 
+You can specify on individual relations the following constraints: 
+Answer) 
+-entity integrity constraint 
+-key constraint 
+why are tuples in a relation not ordered? 
+Answer) the relational data model applies set theory 
+What is the difference between an entity and attribute? 
+Answer) An attribute is a field in a database and an entity is a table 
+Which of the following is true? 
+Answer) A DMBS separates applications from data 
+
+The universe constraint specifies – for an attribute set which may have redundant attributes – that no two distinct tuples in any state r of R can have the same value for the attribute set called _______.
+Answer) Super key 
+The relational model’s domain constraint is a _______ . 
+Answer) Schema-based constraint 
+Which of the following symbols is not used in an ERD ?
+Answer) circle 
+A prime attribute means: 
+Answer) it is a member of some candidate  key of R 
+If a relation is in BCNF, then it is also in 
+Answer) All of the above ( 1NF, 2NF,3NF) 
+Extra notes: 
+Another name for weak entity is child
+In terms of database what does consistency mean?
+- All users have the same view of data
+Why are duplicate tuples not allowed in a relation?
+- The relational data model not allows redundancy
+What is the difference between entity and an attribute?
+- An attribute is a field in a database and an entity is a table
+The uniqueness constraint specifies – for an attribute set which may have redundant attrbute – that no 
+two distinct tuples in any state r of R can have the same value for the attribute set called _____
+- Super key
+Which of the following symbol is not used in ERD?
+- Circle
+A prime attribute means 
+- It is a member of some candidate key of R
+If a relation is in BCNF, then it is also in
+- All of the above
+
+EXAM_MCQ
+
+
 
