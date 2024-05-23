@@ -1,4 +1,4 @@
-###warm-up
+###warm-up------(collected from seniors)
 Normalization ______ data duplication. 
 Answer ) Eliminates 
 In terms of databases, what does consistency mean? 
@@ -53,7 +53,151 @@ A prime attribute means
 If a relation is in BCNF, then it is also in
 - All of the above
 
-EXAM_MCQ
+EXAM_MCQ----my answers
+
+1. which type of entity cannont exist in the database unless another type of entity also exist in the database but does not exist require that 
+the identifier of that other entity be included as part of its own identifier(2024,2022)
+
+a. weak entity.
+b. strong entity.
+c. ID-dependent entity.
+d. ID-independent entity.
+
+answer: a
+
+
+
+2. The different classes of relations created by the technique for preventing modification anomalies are called:(2024,2022,2018)
+ 
+a. Normal forms.
+b. Referential integrity constraints.
+c. functional dependencies.
+d. None of above is correct.
+
+answer: a
+
+
+
+3. A keys:(2024)
+
+a. Must always be composed of two or more columns.
+b. can only be one column.
+c. identifies a row.
+d. identifies a column.
+
+answer:  c
+
+
+
+4. If a table has been normalized so that all determinants are candidate keys, then the table is in:(2024)
+
+a. 1NF.
+b. 2NF.
+c. 3NF.
+d. BCNF.
+
+answer: d
+
+
+
+5. When the values is one or more attributes being used as foreign key must exist in another set of one or 
+more attributes ib another tables, we have created a(n):(2024,2022)
+
+a. transitive dependency.
+b. insertion anomaly.
+c. referential integrity constraint.
+d. normal form.
+answer: c
+
+
+6. A functional dependency is a relationship between or among:(2024)
+
+a. tables.
+b. rows.
+c. relations.
+d. attributes.
+
+answer:d
+
+7.______________ is the minimal superkey.(2022)
+a.primary key
+b.candidate key
+c.foreign key
+d.alternate key
+e.unique key
+
+answer:b
+
+8.Metadata about structure of database is stored in:(2022)
+a.data files
+b.indices
+c.data dictionary 
+d.metadata files
+
+answer:c
+
+9.In the relational model ,relationship between relations or tables are created by:(2022,2018)
+a.composite key
+b.determinants
+c.candidate keys
+d.foreign keys
+
+answer:d
+
+10.A combination of Cartesian Product followed by selection process:(2022)
+a.association
+b.product formalization
+c.joins
+d.protocol
+
+answer:c
+
+11.Functional dependencies are the  types of constraints that are based on:(2018)
+a.keys
+b.key revisited
+c.superset keys
+d.none of these
+
+answer:a
+
+12.Database ------- is the logical design of the data and the database ----------
+which is snapshot of data at a given instance of time.(2018)
+a.instance, schema
+b.relation, schema
+c.relation, domain
+d.schema, instance
+
+answer:d
+
+13.The tuples of the relations can be of _________ order.(2018)
+a.any
+b.same
+c.sorted
+d.constant
+
+answer:a
+14.Which one of the following is a set of one or more attributes taken collectively to uniquely 
+identify a record:(2018)
+a.candidate key
+b.sub key
+c.super key
+d.foreign key
+
+answer:c
+
+15.Tables in Second Normal Form:(2NF)  (2018)
+a.eliminates all hidden dependencies
+b.eliminates all possibilities of insertion anamolies
+c.have a composite key
+d.have all non-key fields depend on the whole primary key
+
+answer:a
+
+16.
+
+
+
+
 
 
 
