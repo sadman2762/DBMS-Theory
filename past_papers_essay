@@ -1,1 +1,129 @@
+PART 2
+1.Define function dependency!
+List the Armstrong  axioms and state the below statement 
+{WX->Y, X->Z , Z->WY} |= {X->Y}
 
+ANSWER:
+A functional dependency x->y, between two sets of attributes specifies a constraint that any two tuples t1 and t2 that have t1[x]= t2[x]
+they must also have t1[y] = t2[y]
+
+Armstrong's Axioms:
+1.The Reflexive Rule:If y is a proper subset of  x ,then x->y
+2.The Augmentation Rule:{x ->y} |= xz -> yz
+3.The Transitivity Rule:{x->y,y->z} |= x->z
+
+
+
+
+2.With reference to a sample relation of your own choosing, explain and discuss the
+following relational model terminology, including its function and any related concepts.
+A good diagram showing your sample relation is strongly suggested.
+Tuple 
+Attribute 
+Domain 
+Degree 
+Cardinality 
+Each item is equally weighted.
+Three marks per item with full marks only for covering all the following points. 
+answer:
+Tuple means row. Each row is uniquely identified by a primary key.
+
+Attribute means column. Each column must have a unique name within that table (relation) and can be isolated across tables by 
+qualifying the column name with the table name (such as student.name) .
+
+The domain specifies what are acceptable data values within a column (and by implication the acceptable operations on that column’s data).
+
+The degree of a table is the width or number of columns and is part of the union compatibility criteria (the other one being that like - for -
+like columns in other results sets share comparable domains). 
+
+The cardinality of a table is simply the depth or number of rows in the table. Good diagram gets bonus marks. 
+
+
+3.The table shown below stores details of students and the overall grade each student obtained in different modules. The Primary Key is (StudentID, ModuleID). 
+
+
+StudentID	StudentName	ModuleID	ModuleName	Grade
+S001	Smith	M01	Java	A
+S001	Smith	M02	Databases	B
+S002	Ford	M01	Java	B
+(i) Which Normal Form does the above table violate and why? 
+(ii) Give an example of an update anomaly and an example of a delete anomaly that may occur if the table is left un - normalised. 
+Explain the probl ems that are caused. 
+(iii) Show how you would n ormalise the table. 
+((((((answer)))))
+(i) The table violates 2 nd Normal Form. because there are two partial dependencies: StudentID StudentName and ModuleID ModuleName .
+
+(ii) Update anomaly: if a module is to be renamed, it is possible to mistype one of its instances, thus introducing an inconsistency . 
+Deletion anomaly: if students are deleted, modules will also be deleted, resulting in a loss of modules’ details . 
+
+(iii) 
+Student( StudentID , StudentName) 
+Module( ModuleID , ModuleName) 
+Results( StudentID *, ModuleID *, Grade) 
+
+4.A company uses the table below to record details of st aff. Each staff has up to three qualifications: 
+StaffID	stafname	qualifications
+S01	Ibanga	BSc, MSc, PhD
+S02	Kumar	BSc, MSc
+S03	Grant	BSc, PhD
+(i) Explain why this table is not in “First Normal Form” (1NF). 
+(ii) Show how this table can be transformed into 1NF tables.
+answer
+(i) The attribute “qualifications” is multi - valued on the PK, hence the table is not in 1NF. 
+
+(ii)Solutio n 1: 
+Students ( StaffID , StaffName, Qualification1, Qualification2, Qualification3)  
+
+Solution2: 
+Students ( StaffID , StaffName) (2 marks) 
+Qualifications ( StaffID *, Qualification ) (2 marks) 
+Alternatively, students can use a third table ( QualID , Qual ification) 
+
+
+5.Refer to the ER model given i n Figure A1. Assume that : - 
+
+A Trainer x trained by no more than one Trainer. 
+A given horse competes in a particular race ridden by a particular jockey on a specific date and the position (ie 1 st ,2 nd etc) in which a horse
+finishes is recorded.   
+
+
+a.In the context of database design give a precise definition of an Entity Type 
+answer
+Entity type describes an object, a noun, a class any meaningful collection of objects of t he same type having the same properties/attributes 
+b.Explain using examples from the ER model (figure A1) the difference between a ternary relationship and a binary relationship.
+Answer
+3.Explain using examples from the ER model (figure A1) the difference between a ternary relationship and a binary relationship. 
+ANSWER:
+Ternary relationships have three participating entity types whereas binary have two. Example : results and trains respectively.
+An example will show diagrammatically examples of instances of horseID,jockeyID,RaceID all participating in the same relationship. 
+Binary relationship instances have a set of instances that relate a horse to a particular trainer and a trainer related to many horses. 
+Some instances of a horse may not have a (current) trainer.
+
+c.explain how you would modify the ER model given in Figure A1 in order to resolve many to many relationships.
+
+1.For each binary M:N relationship type R, create a new relation S to represent R.
+2.Include as foreign key attributes in S the primary keys of the relations that represent the participating entity types;
+a. their combination will form the primary key of S.
+3.Also include any simple attributes of the M:N relationship type (or simple components of composite attributes) as attributes of S.
+
+
+
+d.Explain how you would translate your modified ER model (in part d) a s a set of Tables, giving table names, column names and an indication of 
+primary and foreign keys. 
+answer
+Many to many relationships automatically introduce an associative entity that maps directly to a new table with a composite key consisting of fields 
+that exist in the original tables forming the relation ship. Hence the ternary relationship would be transformed into a table with a composite key 
+comprising of the three identifiers from the three entity types forming the relationship. One to Many relationships map to two tables generally although 
+technically this usually depends on the participation constraint on the one side. 
+
+Result Table  
+HorseID.JockeyID, ResultDate , RaceID , Position 
+
+Horse table 
+HorseID, horsename ,Owner, DateOfBirth, Sta bleAddress, TrainerID 
+
+Trainer table 
+TrainerID , TrainerName, TrainerBase… 
+
+Jockey table 
+jockeyID , jockeyName 
