@@ -14,6 +14,13 @@ Armstrong's Axioms:
 2.The Augmentation Rule:{x ->y} |= xz -> yz
 3.The Transitivity Rule:{x->y,y->z} |= x->z
 
+demonstration:
+1.X->Z
+2.Z->WY
+3.x->wy (transitivity)
+4. y is a subset of w . wy -> y (reflexivity)
+5.{x->wy, wy->y} |= x->y (transivity)
+
 
 
 
