@@ -154,13 +154,29 @@ d.Sub
 
 answer:c
 
-18.7.Which forms simplifies and ensures that there is minimal data aggregates and repetitive groups:(2023)
+18.Which forms simplifies and ensures that there is minimal data aggregates and repetitive groups:(2023)
 a.1NF
 b.2NF
 c.3NF
 d.All of the mentioned 
 
 answer:c
+
+19.Several entities are associated through (2023)
+a.connection
+b.relationship
+c.agreement
+d.integration
+
+answer:b
+
+20.A collection of tables to represent data and relationship among data is represented through model----------(2023)
+a.ER model
+b.Relational model
+c.semistructered model
+d.object based model
+
+answer:b
 
 
 
