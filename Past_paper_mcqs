@@ -136,7 +136,7 @@ b.eliminates all possibilities of insertion anamolies
 c.have a composite key
 d.have all non-key fields depend on the whole primary key
 
-answer:a
+answer:d
 
 16.For each attribute of a relation, there is a set permitted values, called the______ of that attribute. (2023)
 a.Domain
