@@ -136,3 +136,81 @@ TrainerID , TrainerName, TrainerBase…
 
 Jockey table 
 jockeyID , jockeyName 
+
+1.What does the NULL value mean?
+The meaning of the former type of NULL is not applicable, whereas the meaning of the latter is unknown. The unknown category of NULL
+can be further classified into two cases. The first case arises when it is known that the attribute value exists but is missing—for instance,
+if the Height attribute of a person is listed as NULL. The second case arises when it is not known whether the attribute value exists—for example,
+if the Home_phone attribute of a person is NULL.
+2.Integrity constraints of relational model(only a list)
+TYPES OF INTEGRITY CONSTRAINTS
+
+Various types of integrity constraints are-
+1.Domain Integrity
+2.Entity Integrity Constraint
+3.Referential Integrity Constraint
+4.Key Constraints
+ 
+ 
+ 
+3.Definition of Functional Dependency	
+A functional dependency is a constraint between two sets of attributes from the database. Definition. A functional dependency, denoted by X → Y,
+between two sets of attributes X and Y that are subsets of R specifies a constraint on the possible tuples that can form a relation state r of R.
+The constraint is that, for any two tuples t1 and t2 in r that have t1[X] = t2[X], they must also have t1[Y] = t2[Y].
+ 
+4.Union type or category in EER model
+For example, suppose that we have three entity types: PERSON, BANK, and COMPANY. In a database for motor vehicle registration,
+an owner of a vehicle can be a person, a bank (holding a lien on a vehicle), or a company. We need to create a class (collection of entities)
+that includes entities of all three types to play the role of vehicle owner. A category (union type) OWNER that is a subclass of the UNION of the three 
+entity sets of COMPANY, BANK, and PERSON can be created for this purpose. We display categories in an EER diagram as shown in Figure 8.8. The superclasses
+COMPANY, BANK, and PERSON are connected to the circle with the ∪ symbol, which stands for the set union operation.
+ 
+ 
+5.Attributes in ER model
+ 
+ 
+ 
+8.Mapping of Binary 1:1 Relationship Types
+For each binary 1:1 relationship type R in the ER schema, identify the relations S and T that correspond to
+the entity types participating in R. There are three possible approaches: (1) the foreign key approach, (2) the merged relationship approach,
+and (3) the crossreference or relationship relation approach. The first approach is the most useful and should be followed unless special conditions exist,
+as we discuss below.
+ 
+ 
+                                   PART 4
+ 
+ 
+1.Context of database design give a precise definition of an Entity Type. 
+Entity type describes an object, a noun, a class any meaningful collection of objects of the same type having the same properties/attributes 
+ 
+2.Outline why an ER model assists in database design.  
+High level model useful for semantic extraction and conveyance of meaning about real world objects and how they are associated. ER model often assists
+in normalisation if the number of tables is large as it is relatively easy to transform an ER model to 2NF. Many Case tools translate ER models to relations 
+so an ER model can be regarded as a blueprint for many automation tools in DB design.
+ 
+3.Explain using examples from the ER model (figure A1) the difference between a ternary relationship and a binary relationship. 
+Ternary relationships have three participating entity types whereas binary have two. Example : results and trains respectively.
+An example will show diagrammatically examples of instances of horseID,jockeyID,RaceID all participating in the same relationship. 
+Binary relationship instances have a set of instances that relate a horse to a particular trainer and a trainer related to many horses.
+Some instances of a horse may not have a (current) trainer.
+ 
+4.State why many to many relationships need to be resolved into one to many relationships in an ER model . 
+The relational model derived from an ER model cannot accommodate many to many relationships only one to many 
+and one to one relationships. This is because a many to many relationship hides attributes that would suggest the existence of an entity type 
+instead of the relationship type.
+ 
+5.Explain how you would translate your modified ER model (in part d) as a set of Tables, giving table names, column names and an indication of primary and
+foreign keys. 
+Many to many relationships automatically introduce an associative entity that maps directly to a new table with a composite key consisting of fields that
+exist in the original tables forming the relationship. Hence the ternary relationship would be transformed into a table with a composite key comprising of 
+the three identifiers from the three entity types forming the relationship. One to Many relationships map to two tables generally although technically this 
+usually depends on the participation constraint on the one side.
+ 
+6.What is the purpose of the HAVING keyword? Use a HAVING clause in query 2 above to show how it can be used to limit the rows in the output : 
+HAVING qualifies a GROUP BY with a condition operating on the group/set
+ 
+7.Discuss the advantages of using stored procedures as a way of implementing database queries. 
+Stored procedures encapsulate frequently run segments of code written in SQL code. They support parameterisation and may include sections
+of SELECTS/INSERTS/UPDATE statements. The code can be the same but the results are different by using different parameters and conditional 
+expressions (IF/THEN/ELSE etc) when the code is run. Key advantages are reuse of code; security; abstraction/hiding code; avoid SQL injection attacks;
+validation code close to database.  
